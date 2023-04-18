@@ -17,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <HeroImg
+        darkMode={isDarkMode}
         Logo={isDarkMode ? darkLogo : lightLogo}
         HeroImg={isDarkMode ? darkHero : lightHero}
       />

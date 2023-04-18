@@ -56,3 +56,20 @@ button {
   color: #E8A518;
   font-size: 1rem;
 }
+
+.dark-mode {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode-text {
+  color: #FFF;
+}
+
+.dark-mode-button-main {
+  color: #FFF;
+}
+
+.dark-mode-button-secondary {
+  background-color: #FFF !important;
+  font-weight: bold;
+}
