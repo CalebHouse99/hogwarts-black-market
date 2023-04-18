@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utils */
+button {
+  padding: 10px 20px;
+  border: 0px;
+  border-radius: 20px;
+}
+
+/* Spefs */
+
+.Overlay {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  left: 60%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.Overlay .Main {
+  margin: -20rem 0 5rem 0;
+}
+
+.Overlay .Main button {
+  background: #E8A518;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.Overlay .Main h1 {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.Overlay .Secondary h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.Overlay .Secondary button {
+  background: #000;
+  color: #E8A518;
+  font-size: 1rem;
+}
