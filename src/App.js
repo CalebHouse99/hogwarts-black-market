@@ -18,14 +18,14 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
       <HeroImg
         darkMode={isDarkMode}
         Logo={isDarkMode ? darkLogo : lightLogo}
         HeroImg={isDarkMode ? darkHero : lightHero}
       />
       <Dotd isDarkMode={isDarkMode} />
-      <Membership />
+      <Membership isDarkMode={isDarkMode} />
       <Explore isDarkMode={isDarkMode} />
       <Footer toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
     </div>

@@ -24,3 +24,7 @@
 .Dotd.dark-mode .deets p {
   color: #FFF;
 }
+
+.Dotd.dark-mode {
+  background: #000;
+}

@@ -1,24 +1,42 @@
 .HeroWrap {
   position: relative;
-  width: 100%;
   height: 100vh;
-  left: 0px;
-  top: 0px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .Logo {
   position: absolute;
-  width: 390px;
-  height: 64px;
-  left: 40px;
-  top: 19px;
+  top: 30px;
+  left: 30px;
+  width: 200px;
+  z-index: 10;
 }
 
 .Hero {
   position: absolute;
-  width: 100%;
+  top: 0;
+  left: 0;
   height: 100%;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.HeroWrap.dark-mode .Hero {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.Overlay.dark-mode {
+  background: rgba(0, 0, 0, 0.8);
 }

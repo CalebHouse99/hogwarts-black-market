@@ -1,14 +1,17 @@
-import './HeroImg.css'
-import HeroOverlay from './HeroOverlay'
+import './HeroImg.css';
+import HeroOverlay from './HeroOverlay';
 
-function HeroImg({ Logo, HeroImg, darkMode }) {
+function HeroImg(props) {
+  const { darkMode, Logo, HeroImg } = props;
+
   return (
-    <div className="HeroWrap">
-      <img className="Logo" src={Logo} alt="Logo"></img>
-      <img className="Hero" src={HeroImg} alt="Hero"></img>
+    <div className={`HeroWrap ${darkMode ? 'dark-mode' : ''}`}>
+      <img className="Logo" src={Logo} alt="Logo" />
+      <img className="Hero" src={HeroImg} alt="Hero" />
       <HeroOverlay darkMode={darkMode} />
     </div>
   );
 }
 
 export default HeroImg;
+
