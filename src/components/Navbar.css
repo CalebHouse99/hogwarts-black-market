@@ -1,0 +1,33 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Navbar img {
+  width: 20%;
+  margin-left: 3rem;
+}
+
+.Navbar .Links {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 80%;
+  height: 100%;
+  margin-right: 3rem;
+}
+
+.Navbar .Links a {
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  color: #000;
+}
+
+.Navbar .Links a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  transition: all 0.5s;
+}

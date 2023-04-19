@@ -1,0 +1,26 @@
+.Upgrade {
+  margin: auto;
+  width: 100%;
+}
+
+.Upgrade a {
+  display: flex;
+  font-size: 3rem;
+  color: #000;
+  font-weight: bold;
+  padding: 0.25rem;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  justify-content: center;
+  background: #E8A518;
+  border: #000 solid 3px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.Upgrade a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.5s;
+}

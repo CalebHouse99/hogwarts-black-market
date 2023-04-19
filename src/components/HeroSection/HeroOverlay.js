@@ -11,7 +11,9 @@ function HeroOverlay({ darkMode }) {
       </div>
       <div className="Secondary">
         <h2 className={darkMode ? 'dark-mode-text' : ''}>Not A Member? Sign Up Now!</h2>
-        <button className={darkMode ? 'dark-mode-button-secondary' : ''}>Sign Up</button>
+        <a href="/signup">
+          <button className={darkMode ? 'dark-mode-button-secondary' : ''}>Sign Up</button>
+        </a>
       </div>
     </div>
   );

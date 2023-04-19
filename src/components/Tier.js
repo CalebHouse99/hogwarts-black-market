@@ -5,7 +5,9 @@ function Tier({ title, tierPrice, isDarkMode }) {
     <div className={`Tier ${isDarkMode ? 'dark-mode' : ''}`}>
       <img alt="Tier thumbnail"></img>
       <h2>{title}</h2>
-      <button>{tierPrice}</button>
+      <a href="/signup">
+        <button>{tierPrice}</button>  
+      </a>
     </div>
   );
 }
