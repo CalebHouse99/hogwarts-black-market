@@ -1,0 +1,33 @@
+.Tier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.5rem 3rem;
+  border: 5px solid #E8A518;
+  border-radius: 15px;
+  padding: 2rem;
+  background: #CCC;
+  width: 30%;
+}
+
+.Tier h2 {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.Tier button {
+  background: #E8A518;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.Tier button:hover {
+  opacity: 60%;
+  transition: all 0.5s;
+}
+
+.Tier.dark-mode h2 {
+  color: #FFF;
+}

@@ -2,13 +2,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #CCC;
+}
+
+.toggle-dark {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+}
+
+.toggle-light {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 
 .Footer button {
   cursor: pointer;
+}
+
+.Footer button:hover {
+  opacity: 80%;
+  transition: all 0.5s;
 }

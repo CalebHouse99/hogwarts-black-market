@@ -1,0 +1,36 @@
+.Explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E8A518;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #FFF;
+}
+
+.Explore .Arrow {
+  font-size: 3.5rem;
+  margin: 0 2rem;
+}
+
+.Explore button {
+  background: #FFF;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.Explore button:hover {
+  opacity: 60%;
+  transition: all 0.5s;
+}
+
+.Explore.dark-mode h1,
+.Explore.dark-mode .Arrow {
+  color: #FFF;
+}
+
+.Explore.dark-mode button {
+  background-color: #000;
+  color: #FFF;
+}

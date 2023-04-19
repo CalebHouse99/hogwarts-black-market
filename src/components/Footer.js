@@ -1,11 +1,14 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer({ toggleDarkMode }) {
+function Footer({ toggleDarkMode, isDarkMode }) {
   return (
     <div className="Footer">
-      <button onClick={toggleDarkMode}>
-        Toggle Dark Mode
+      <button
+        className={isDarkMode ? 'toggle-light' : 'toggle-dark'}
+        onClick={toggleDarkMode}
+      >
+        {isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode'}
       </button>
     </div>
   );
