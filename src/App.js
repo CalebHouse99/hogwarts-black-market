@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
-import Footer from './components/Footer';
-import HeroImg from './components/HeroSection/HeroImg';
-import Dotd from './components/Dotd';
-import Membership from './components/Membership';
-import Explore from './components/Explore';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './HomePage';
+import Store from './pages/Store';
+import SignUp from './pages/SignUp';
 import './App.css';
-import lightLogo from './img/HBM_Logo_v2_Black.png';
-import darkLogo from './img/HBM_Logo_v2_White.png';
-import lightHero from './img/lightHero.png';
-import darkHero from './img/darkHero.png';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -18,17 +13,20 @@ function App() {
   };
 
   return (
-    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-      <HeroImg
-        darkMode={isDarkMode}
-        Logo={isDarkMode ? darkLogo : lightLogo}
-        HeroImg={isDarkMode ? darkHero : lightHero}
-      />
-      <Dotd isDarkMode={isDarkMode} />
-      <Membership isDarkMode={isDarkMode} />
-      <Explore isDarkMode={isDarkMode} />
-      <Footer toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-    </div>
+    <Router>
+      <div className={`App${isDarkMode ? ' dark-mode' : ''}`}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <HomePage isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route path="/store" element={<Store />} />
+          <Route path="/signup" element={<SignUp />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
