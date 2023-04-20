@@ -31,3 +31,9 @@
   color: #FFF;
   transition: all 0.5s;
 }
+
+.Navbar .Links a.selected {
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  transition: all 0.5s;
+}

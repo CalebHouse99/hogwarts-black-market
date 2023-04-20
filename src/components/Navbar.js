@@ -1,13 +1,13 @@
 import './Navbar.css';
 
-function Navbar({logo}) {
+function Navbar({ logo, selectedStore, selectedSignUp }) {
   return (
     <div className="Navbar">
       <img alt="logo" src={logo}></img>
       <div className="Links">
         <a href="/">Home</a>
-        <a href="/store">Store</a>
-        <a href="/signup">Sign Up</a>
+        <a className={selectedStore} href="/store">Store</a>
+        <a className={selectedSignUp} href="/signup">Sign Up</a>
       </div>
     </div>
   );

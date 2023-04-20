@@ -1,14 +1,14 @@
 .Upgrade {
-  margin: auto;
+  margin: 0 auto 3rem;
   width: 100%;
 }
 
 .Upgrade a {
   display: flex;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #000;
   font-weight: bold;
-  padding: 0.25rem;
+  padding: 1rem;
   margin: auto;
   width: 70%;
   text-align: center;
