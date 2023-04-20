@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Search from '../components/Search';
 import Upgrade from '../components/Upgrade';
 import Product from '../components/Product';
+import Footer from '../components/Footer';
 import { firestore, collection, getDocs } from '../firebase';
 import './Store.css';
 import lightLogo from '../img/HBM_Logo_v2_Black.png';
@@ -50,6 +51,7 @@ function Store() {
           <Product key={product.id} product={product} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
