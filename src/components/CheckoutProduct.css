@@ -1,0 +1,9 @@
+.CheckoutProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CheckoutProduct .Details {
+  padding: 0 1rem;
+}

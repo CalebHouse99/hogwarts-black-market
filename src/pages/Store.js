@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar';
 import Search from '../components/Search';
 import Upgrade from '../components/Upgrade';
 import Product from '../components/Product';
+import Checkout from '../components/Checkout';
+import CartBtn from '../components/CartBtn';
 import Footer from '../components/Footer';
 import { firestore, collection, getDocs } from '../firebase';
 import './Store.css';
@@ -38,11 +40,19 @@ function Store() {
     setSearchTerm(event.target.value);
   };
 
+  const [isCheckoutVisible, setIsCheckoutVisible] = useState(false);
+
+  const toggleCheckout = () => {
+    setIsCheckoutVisible(!isCheckoutVisible);
+  };
+
   return (
     <div>
       <Navbar selectedStore="selected" logo={lightLogo} />
       <Search searchTerm={searchTerm} onSearchChange={handleSearchChange} />
       <Upgrade />
+      {isCheckoutVisible && <Checkout onClose={toggleCheckout} />}
+      <CartBtn onViewCartClick={toggleCheckout} />
       <div className="products-container">
         {products.filter((product) =>
         (product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||

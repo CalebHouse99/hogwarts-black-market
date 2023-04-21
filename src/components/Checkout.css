@@ -1,0 +1,25 @@
+.Checkout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 30rem;
+  height: 30rem;
+  background: #FFF;
+  border-radius: 10px;
+  border: solid 3px #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.Checkout .CheckoutNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}

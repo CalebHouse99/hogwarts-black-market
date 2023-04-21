@@ -1,10 +1,10 @@
 import React from 'react'
 import './CartBtn.css'
 
-function CartBtn() {
+function CartBtn({ onViewCartClick }) {
   return (
     <div className='CartBtn'>
-      <button>View Cart</button>
+      <button onClick={onViewCartClick}>View Cart</button>
     </div>
   )
 }
