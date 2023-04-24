@@ -9,9 +9,9 @@
 
 /* utils */
 button {
-  padding: 10px 20px;
-  border: 3px solid black;
-  border-radius: 20px;
+  padding: 10px 24px;
+  border: 2px solid black;
+  border-radius: 50px;
   cursor: pointer;
 }
 
@@ -26,7 +26,7 @@ button:hover {
   position: absolute;
   width: 40%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(5px);
   left: 60%;
   top: 0;
@@ -50,13 +50,13 @@ button:hover {
 }
 
 .Overlay .Main h1 {
-  font-size: 3rem;
-  padding-bottom: 2rem;
+  font-size: 2rem;
+  padding: 2rem;
 }
 
 .Overlay .Secondary h2 {
-  font-size: 2rem;
-  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  padding: 2rem;
 }
 
 .Overlay .Secondary button {

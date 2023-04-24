@@ -2,7 +2,7 @@
   width: 90vw;
   margin: 3rem auto;
   padding: 0 2rem;
-  height: 10rem;
+  height: 12rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,12 +11,18 @@
 }
 
 .Dotd .deets {
+  padding: 1.5rem;
+
   margin-left: 4rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   justify-content: space-between;
   text-align: left;
+}
+.Dotd .deets h2, .Dotd .deets h3 {
+  padding-bottom: 1rem;
+
 }
 
 .Dotd.dark-mode .deets h2,
