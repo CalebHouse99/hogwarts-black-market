@@ -1,9 +1,15 @@
 .CheckoutProduct {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .CheckoutProduct .Details {
   padding: 0 1rem;
+}
+
+.CheckoutProduct>img {
+  width: 75px;
+  height: 75px;
 }

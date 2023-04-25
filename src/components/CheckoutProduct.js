@@ -1,18 +1,21 @@
 import React from 'react'
 import './CheckoutProduct.css'
 
-function CheckoutProduct() {
+function CheckoutProduct({ product }) {
+  const { productName, price, quantity } = product;
+  const totalPrice = (price * quantity).toFixed(2);
+
   return (
     <div className='CheckoutProduct'>
-      <img alt="Product Thumbnail"></img>
+      <img alt={productName} src={product.imgLink} />
       <div className='Details'>
-        <p>Product Title</p>
-        <p>Product Price</p>
-        <p>Product Quantity</p>
+        <p>{productName}</p>
+        <p>Price: ${price}</p>
+        <p>Quantity: {quantity}</p>
       </div>
-      <p>Total Price</p>
+      <p>Total Price: ${totalPrice}</p>
     </div>
-  )
+  );
 }
 
-export default CheckoutProduct
+export default CheckoutProduct;

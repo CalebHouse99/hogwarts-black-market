@@ -1,16 +1,16 @@
 import React from 'react';
 import './Product.css';
 
-function Product({ product }) {
-  const { name, description, price, imgLink } = product;
+function Product({ product, onAddToCart }) {
+  const { productName, description, price, imgLink } = product;
 
   return (
     <div className="Product">
-      <img src={imgLink} alt={name} />
-      <h2>{name}</h2>
+      <img src={imgLink} alt={productName} />
+      <h2>{productName}</h2>
       <p>{description}</p>
       <p className="Price">Price: ${price}</p>
-      <button>Add To Cart</button>
+      <button onClick={() => onAddToCart(product)}>Add To Cart</button>
     </div>
   );
 }

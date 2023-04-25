@@ -8,8 +8,8 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 30rem;
-  height: 30rem;
+  width: 40rem;
+  height: 40rem;
   background: #FFF;
   border-radius: 10px;
   border: solid 3px #000;
@@ -22,4 +22,25 @@
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
+}
+
+.Checkout>p{
+  padding: 0.25rem;
+}
+
+.items-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  align-self: flex-start;
+  padding: 0 0 1rem 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.buttons-container button {
+  margin: 0 5px;
 }
