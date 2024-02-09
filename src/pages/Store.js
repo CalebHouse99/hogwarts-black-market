@@ -8,7 +8,7 @@ import CartBtn from '../components/CartBtn';
 import Footer from '../components/Footer';
 import { firestore, collection, getDocs } from '../firebase';
 import './Store.css';
-import lightLogo from '../img/HBM_Logo_v2_Black.png';
+import lightLogo from '../img/Hogwarts_Marketplace_Black.png';
 
 function Store() {
   const [products, setProducts] = useState([]);

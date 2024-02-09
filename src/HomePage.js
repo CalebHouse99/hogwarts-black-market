@@ -4,8 +4,8 @@ import Dotd from './components/Dotd';
 import Membership from './components/Membership';
 import Explore from './components/Explore';
 import Footer from './components/Footer';
-import lightLogo from './img/HBM_Logo_v2_Black.png';
-import darkLogo from './img/HBM_Logo_v2_White.png';
+import lightLogo from './img/Hogwarts_Marketplace_Black.png';
+import darkLogo from './img/Hogwarts_Marketplace_White.png';
 import lightHero from './img/lightHero.png';
 import darkHero from './img/darkHero.png';
 

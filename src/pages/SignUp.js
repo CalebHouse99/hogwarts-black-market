@@ -1,7 +1,7 @@
 import './SignUp.css';
 import React from 'react';
 import Navbar from '../components/Navbar';
-import lightLogo from '../img/HBM_Logo_v2_Black.png';
+import lightLogo from '../img/Hogwarts_Marketplace_Black.png';
 
 function SignUp() {
   return (
